@@ -10,8 +10,8 @@ module.factory 'ndxIdle', ($timeout, $injector, $window) ->
       true
   lastMove = new Date().valueOf()
   timedOut = false
-  timeoutTime = 1000 * 60 * 5
-  logoutTime = 1000 * 60 * 8
+  timeoutTime = 1000 * 60 * 60
+  logoutTime = 1000 * 60 * 70
   timeoutFn = null
   logoutFn = ->
     auth.logOut()
@@ -30,7 +30,7 @@ module.factory 'ndxIdle', ($timeout, $injector, $window) ->
         if new Date().valueOf() - lastMove > logoutTime
           logoutFn?()
           reset()
-    $timeout tick, 1000 * 1
+    $timeout tick, 1000 * 20
   tick()
   reset = ->
     timedOut = false

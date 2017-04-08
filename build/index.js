@@ -20,8 +20,8 @@
     };
     lastMove = new Date().valueOf();
     timedOut = false;
-    timeoutTime = 1000 * 60 * 5;
-    logoutTime = 1000 * 60 * 8;
+    timeoutTime = 1000 * 60 * 60;
+    logoutTime = 1000 * 60 * 70;
     timeoutFn = null;
     logoutFn = function() {
       return auth.logOut();
@@ -51,7 +51,7 @@
           }
         }
       }
-      return $timeout(tick, 1000 * 1);
+      return $timeout(tick, 1000 * 20);
     };
     tick();
     reset = function() {
