@@ -1,0 +1,17 @@
+{
+  "name": "ndx-idle",
+  "description": "perform an action when the user is idle for ndx-framework",
+  "main": "build/index.js",
+  "authors": [
+    "ndxbxrme"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/ndxbxrme/ndx-idle",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

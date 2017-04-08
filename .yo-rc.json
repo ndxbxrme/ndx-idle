@@ -1,0 +1,13 @@
+{
+  "generator-ndx": {
+    "filters": {
+      "appType": "cli",
+      "client": true,
+      "description": "perform an action when the user is idle for ndx-framework",
+      "appName": "ndx-idle",
+      "gitname": "ndxbxrme",
+      "gitemail": "lewis_the_cat@hotmail.com"
+    },
+    "appname": "github"
+  }
+}
