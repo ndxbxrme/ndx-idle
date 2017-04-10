@@ -3,7 +3,7 @@ module = null
 try
   module = angular.module 'ndx'
 catch e
-  module = angular.module 'ndx-idle', []
+  module = angular.module 'ndx', []
 module.factory 'ndxIdle', ($timeout, $injector, $window) ->
   auth = if $injector.has('auth') then $injector.get('auth') else
     getUser: ->

@@ -8,7 +8,7 @@
     module = angular.module('ndx');
   } catch (error) {
     e = error;
-    module = angular.module('ndx-idle', []);
+    module = angular.module('ndx', []);
   }
 
   module.factory('ndxIdle', function($timeout, $injector, $window) {
