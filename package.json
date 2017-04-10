@@ -1,6 +1,6 @@
 {
   "name": "ndx-idle",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "perform an action when the user is idle for ndx-framework",
   "main": "build/index.js",
   "scripts": {
