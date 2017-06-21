@@ -5,7 +5,7 @@ try
 catch e
   module = angular.module 'ndx', []
 module.factory 'ndxIdle', ($timeout, $injector, $window) ->
-  auth = if $injector.has('auth') then $injector.get('auth') else
+  auth = if $injector.has('Auth') then $injector.get('Auth') else
     getUser: ->
       true
   lastMove = new Date().valueOf()

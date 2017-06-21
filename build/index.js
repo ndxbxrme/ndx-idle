@@ -13,7 +13,7 @@
 
   module.factory('ndxIdle', function($timeout, $injector, $window) {
     var auth, lastMove, logoutFn, logoutTime, move, reset, tick, timedOut, timeoutFn, timeoutTime;
-    auth = $injector.has('auth') ? $injector.get('auth') : {
+    auth = $injector.has('Auth') ? $injector.get('Auth') : {
       getUser: function() {
         return true;
       }
